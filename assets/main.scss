@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.chart-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.chart-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#line-chart {
+  width: 400px;
+  height: 200px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+nav {
+  @apply bg-white shadow-md;
+}
+
+nav a.logo {
+  @apply text-lg font-bold text-gray-800 hover:text-gray-900;
+}
+
+nav ul {
+  @apply flex justify-between items-center w-full;
+}
+
+nav li {
+  @apply mr-6;
+}
+
+nav a {
+  @apply text-gray-600 hover:text-gray-900;
+}
+
+nav button {
+  @apply md:hidden flex justify-center w-8 h-8;
+}
+
+nav button svg {
+  @apply w-6 h-6 text-gray-600;
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    @apply flex;
+  }
+  nav button {
+    @apply hidden;
+  }
+}
